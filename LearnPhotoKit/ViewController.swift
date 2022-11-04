@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .lightGray
         
-        // testAllPhotos()
+        testAllPhotos()
         
         testAssetCollection_album()
         
@@ -27,10 +27,10 @@ class ViewController: UIViewController {
     func testAllPhotos() {
         let options = PHFetchOptions()
         options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-        options.includeHiddenAssets = true
+//        options.includeHiddenAssets = true
         
         let all = PHAsset.fetchAssets(with: options)
-        print(all)
+        print("all", all.count, "\n", all)
     }
     
     func testAssetCollection_smartAlbum_smartAlbumUserLibrary() {
@@ -55,16 +55,12 @@ class ViewController: UIViewController {
         print(assetCollections)
         
         assetCollections.enumerateObjects { collection, index, _ in
-            print(collection.estimatedAssetCount, collection.localizedTitle ?? "null title")
-            
-            if collection.localizedTitle == "Recently Deleted" {
-                let result = PHAsset.fetchAssets(in: collection, options: options)
-                print("Recently Deleted result", result)
-                PHPhotoLibrary.shared().performChanges {
-                    PHAssetChangeRequest.deleteAssets(result)
-                } completionHandler: { flag, error in
-                    print("deleted?", flag, error as Any)
-                }
+            let options = PHFetchOptions()
+            options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+            let assets = PHAsset.fetchAssets(in: collection, options: options)
+            print(collection.estimatedAssetCount, collection.localizedTitle ?? "null title", assets.count)
+            if collection.localizedTitle == "Recents" {
+                print("recents:")
             }
         }
     }
