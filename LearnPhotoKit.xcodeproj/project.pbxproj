@@ -13,6 +13,11 @@
 		8425DD002913707F004BAA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8425DCFE2913707F004BAA30 /* Main.storyboard */; };
 		8425DD0229137082004BAA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8425DD0129137082004BAA30 /* Assets.xcassets */; };
 		8425DD0529137082004BAA30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8425DD0329137082004BAA30 /* LaunchScreen.storyboard */; };
+		8425DD0D2914B538004BAA30 /* PHPickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425DD0C2914B538004BAA30 /* PHPickerDemo.swift */; };
+		8425DD0F2914E47F004BAA30 /* Uitls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425DD0E2914E47F004BAA30 /* Uitls.swift */; };
+		8425DD132914F10B004BAA30 /* ALHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8425DD122914F10B004BAA30 /* ALHelper.m */; };
+		8425DD152914F685004BAA30 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425DD142914F685004BAA30 /* DeviceInfo.swift */; };
+		8425DD18291502CD004BAA30 /* DiskHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8425DD17291502CD004BAA30 /* DiskHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,14 @@
 		8425DD0129137082004BAA30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8425DD0429137082004BAA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8425DD0629137082004BAA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8425DD0C2914B538004BAA30 /* PHPickerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerDemo.swift; sourceTree = "<group>"; };
+		8425DD0E2914E47F004BAA30 /* Uitls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uitls.swift; sourceTree = "<group>"; };
+		8425DD102914F10B004BAA30 /* LearnPhotoKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearnPhotoKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		8425DD112914F10B004BAA30 /* ALHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALHelper.h; sourceTree = "<group>"; };
+		8425DD122914F10B004BAA30 /* ALHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALHelper.m; sourceTree = "<group>"; };
+		8425DD142914F685004BAA30 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		8425DD16291502CD004BAA30 /* DiskHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiskHelper.h; sourceTree = "<group>"; };
+		8425DD17291502CD004BAA30 /* DiskHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiskHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +72,18 @@
 				8425DCF82913707F004BAA30 /* AppDelegate.swift */,
 				8425DCFA2913707F004BAA30 /* SceneDelegate.swift */,
 				8425DCFC2913707F004BAA30 /* ViewController.swift */,
+				8425DD0E2914E47F004BAA30 /* Uitls.swift */,
+				8425DD0C2914B538004BAA30 /* PHPickerDemo.swift */,
+				8425DD142914F685004BAA30 /* DeviceInfo.swift */,
+				8425DD112914F10B004BAA30 /* ALHelper.h */,
+				8425DD122914F10B004BAA30 /* ALHelper.m */,
+				8425DD16291502CD004BAA30 /* DiskHelper.h */,
+				8425DD17291502CD004BAA30 /* DiskHelper.m */,
 				8425DD0129137082004BAA30 /* Assets.xcassets */,
-				8425DD0329137082004BAA30 /* LaunchScreen.storyboard */,
 				8425DD0629137082004BAA30 /* Info.plist */,
 				8425DCFE2913707F004BAA30 /* Main.storyboard */,
+				8425DD0329137082004BAA30 /* LaunchScreen.storyboard */,
+				8425DD102914F10B004BAA30 /* LearnPhotoKit-Bridging-Header.h */,
 			);
 			path = LearnPhotoKit;
 			sourceTree = "<group>";
@@ -99,6 +120,7 @@
 				TargetAttributes = {
 					8425DCF42913707F004BAA30 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -138,6 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8425DD152914F685004BAA30 /* DeviceInfo.swift in Sources */,
+				8425DD0D2914B538004BAA30 /* PHPickerDemo.swift in Sources */,
+				8425DD18291502CD004BAA30 /* DiskHelper.m in Sources */,
+				8425DD0F2914E47F004BAA30 /* Uitls.swift in Sources */,
+				8425DD132914F10B004BAA30 /* ALHelper.m in Sources */,
 				8425DCFD2913707F004BAA30 /* ViewController.swift in Sources */,
 				8425DCF92913707F004BAA30 /* AppDelegate.swift in Sources */,
 				8425DCFB2913707F004BAA30 /* SceneDelegate.swift in Sources */,
@@ -285,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WS8S43M437;
@@ -305,6 +333,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.beforeold.LearnPhotoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LearnPhotoKit/LearnPhotoKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WS8S43M437;
@@ -335,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.beforeold.LearnPhotoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LearnPhotoKit/LearnPhotoKit-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
